@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Usuario</h1>
+    </header>
+    <main>
+        <h2>Complete el formulario para registrarse</h2>
+        <form action="#" method="get"> <!--Usare el metodo post para que se haga el envio de la informacion pero no se muestre en el navegador-->
+            <label for="nombres">Nombres:</label><!--Etiqueta del campo-->
+            <input type="text" id="nombres" name="nombres" placeholder="Ingrese sus nombres" required><!--Campo de entrada de texto obligatoria-->
+            <label for="apellidos">Apellidos:</label><!--Etiqueta del campo-->
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos" required><!--Campo de entrada de texto obligatoria-->
+            <br><br>
+            <label for="email">Correo Electronico:</label><!--Etiqueta del campo-->
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required><!--Campo de entrada de texto obligatoria-->
+            <label for="pasword">Contraseña:</label><!--Etiqueta del campo-->
+            <input type="password" id="pasword" name="pasword" placeholder="Ingrese una contraseña" required><!--Campo de entrada de texto obligatoria-->
+            <br><br>
+            <label for="genero">Genero (Opcional):</label>
+            <select id="genero" name="genero">
+                <option value="">Seleccione una opcion</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+                <option value="prefiero_no_decirlo">Prefiero no decirlo</option>
+            </select>
+            <br><br>
+            <label for="comentario">Comentario (Opcional):</label>
+            <textarea id="comentario" name="comentario" placeholder="Ingrese un Comentario"></textarea>
+            <br><br><br>
+            <button type="submit">Enviar Registro</button><!--Boton para enviar el formulario-->
+        </form>
+        <p><a href="Sesion.html">Iniciar Sesion</a></p>
+    </main>
+    <footer>
+        <p>Jutiapa, 2025 Biblioteca "Don Salomon". Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
