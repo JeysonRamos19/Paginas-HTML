@@ -10,7 +10,43 @@
         <h1>Perfil de Usuario</h1>
     </header>
     <main>
+        <h2>Informacion de tu perfil</h2>
 
+        <!--Informacion solo de lectura-->
+        <img src="https://c.pxhere.com/photos/08/7a/male_portrait_profile_social_media_cv_young_elegant_suit-459413.jpg!d" alt="Foto de perfil" width="200" height="auto">
+        <p><strong>Nombres:</strong> Juan Andre</p>
+        <p><strong>Apellidos:</strong> Perez Suarez</p>
+        <p><strong>Correo Electrónico:</strong> juanperez@mail.com</p>
+        <p><strong>Dirección:</strong> Calle Principal, Jutiapa, Guatemala</p>
+        <p><strong>Pais:</strong> Guatemala</p>
+        <!--Apartado para poder actualizar la informacion-->
+        <h2>Actualizar Información</h2>
+        <form action="#" method="get">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <br><br>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" required></textarea>
+            <br><br>
+            <label for="pais">Pais:</label>
+            <select id="pais" name="pais" required>
+                <option value="guatemala" selected>Guatemala</option>
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+            <label for="imagen">Cambiar foto de perfil:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+            <br><br><br>
+            <button type="submit">Actualizar Perfil</button>
+        </form>
     </main>
     <footer>
         <p>Jutiapa, 2025 Biblioteca "Don Salomon". Todos los derechos reservados.</p>
